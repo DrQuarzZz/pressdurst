@@ -1,0 +1,114 @@
+body {
+    background: black;
+    margin: 0;
+    max-width: 100vw;
+}
+p, h1, h2, h3, h4, h5, h6, a, span {
+    color: #000;
+    margin: 0;
+    font-family: 'Francois one';
+}
+h2 {
+    font-size: 40px;
+}
+p {
+    font-size: 16px;
+}
+#fixed-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow-y:scroll;
+    /*background-image: url('https://www.sprueche-suche.de/wp-content/uploads/2017/08/wenn-ich-ein-bier-sehe-lustige-sprueche.jpg');*/
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.fullscreen-img-wrap {
+    position: relative;
+    height: 100vh;
+    transition: .8s ease-in-out;
+    opacity: 0;
+}
+.inner-bg-wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.main-message {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    padding: 25px;
+    background: #fff;
+    max-width: 70vw;
+}
+#slide-1 .main-message {
+    opacity: 0;
+    transition: opacity .5s ease-in-out;
+}
+.corner-claim {
+    position: fixed;
+    padding: 10px;
+    background: #fff;
+    z-index:1;
+    opacity: 0;
+    transition: opacity .5s ease-in-out;
+}
+#fescht-titel {
+    font-size: 20px;
+    max-width: 55vw;
+    top: 0;
+    left: 0;
+}
+#fescht-datum {
+    font-size: 30px;
+    max-width: 40vw;
+    top: 0;
+    right: 0;
+}
+#fescht-ort {
+    max-width: 25vw;
+    bottom: 0;
+    right: 0;
+}
+#infos {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    padding: 15px;
+    z-index: 1;
+}
+#infos:hover {
+    cursor: pointer;
+}
+#infos p {
+    display: none;
+    text-align: right;
+    color: #fff;
+    text-shadow: 0 0 5px rgba(0,0,0,.5);
+}
+#infos img {
+    width: 50px;
+    height: 50px;
+    float: right;
+}
+#progress {
+    --scroll: 0%;
+    background: linear-gradient(
+      to right,
+      rgb(255, 255, 255) var(--scroll),
+      transparent 0
+    );
+    position: fixed;
+    width: 100%;
+    height: 5px;
+    top: 0px;
+    z-index: 100;
+}
