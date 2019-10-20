@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700&display=swap');
+
 body {
     background: black;
     margin: 0;
@@ -6,7 +8,7 @@ body {
 p, h1, h2, h3, h4, h5, h6, a, span {
     color: #000;
     margin: 0;
-    font-family: 'Francois one';
+    font-family: 'Oswald';
 }
 h2 {
     font-size: 40px;
