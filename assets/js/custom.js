@@ -1,5 +1,23 @@
 $(document).ready(function() {
-
+    new fullpage('#fullpage', {
+        sectionSelector: '.section',
+        normalScrollElements: '#normal-scroll',
+        autoScrolling:true,
+        scrollHorizontally: true
+    });
+    
+    setTimeout(function(){
+        $('.main-message').each(function(){
+            var getTitleHeight = $('#fixed-title-section').outerHeight(),
+                getMainMesssageHeight = $(this).outerHeight(),
+                getImageWrapHeight = getTitleHeight + getMainMesssageHeight;
+                // console.log(getImageWrapHeight);
+                $(this).closest('.fullscreen-img-wrap').find('.inner-bg-wrap').css({
+                    'height': 'calc(100vh - ' + getImageWrapHeight + 'px)',
+                    'margin-top': getTitleHeight + 'px'
+                });
+        });
+    }, 50)
 }); // ready
 
 $(window).on('load', function(){
@@ -73,24 +91,46 @@ $(window).on('load', function(){
       );
     
     // lottie web intro
-    var elem = document.getElementById('slide-1');
+    var elem = document.getElementById('lottie-elem');
     lottie.loadAnimation({
         container: elem, // the dom element that will contain the animation
         renderer: 'svg',
-        loop: false,
+        loop: true,
         autoplay: true,
         path: 'assets/animation/data.json' // the path to the animation json
       });
+      /*
     setTimeout(function(){
         $("html, body").animate({ scrollTop: $(window).height() }, 1000);
         // $('.corner-claim').each(function(){
         //     $(this).css('opacity', '1');
         // });
         $('#slide-1 .main-message').css('opacity', '1');
-        $('#infos').css('opacity', '1');
     }, 8500);
+    */
 
-    $('#infos').on('click', function(){
-        $(this).find('p').slideToggle();
+    $('#infos').on('click', function(e){
+        e.preventDefault();
+        $(this).closest('#fixed-title-section').find('p').slideToggle();
+        if ( $(this).hasClass('opened') ) {
+            $(this).removeClass('opened');
+            $(this).html('Alle Infos')
+        } else {
+            $(this).addClass('opened');
+            $(this).html('&#10007');
+        }
+    });
+
+    $('#anmeldung').on('click', function(e){
+        e.preventDefault();
+        console.log('well at least that worked');
+        // $(this).closest('#anmelden-wrapper').find('#normal-scroll').slideToggle();
+        if ( $(this).closest('#anmelden-wrapper').hasClass('anmeldung-open') ) {
+            $(this).closest('#anmelden-wrapper').removeClass('anmeldung-open');
+            $(this).html('jetzt ahmelde…')
+        } else {
+            $(this).closest('#anmelden-wrapper').addClass('anmeldung-open');
+            $(this).html('&#10007');
+        }
     });
 }); //window
