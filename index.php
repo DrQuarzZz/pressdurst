@@ -34,17 +34,17 @@
     <div id="anmelden-wrapper">
         <button id="anmeldung" href="#">jetzt ahmelde…</button>
         <div id="normal-scroll">
-          <form method="post" action="">
+          <form method="post" action="anmeldung.php">
                 <h3>bisch debi?</h3>
-                <!--<input type="radio" name="teilnahm" value="sure" checked><label><strong>ich bin fix debii!</strong></label><br>
-                <input type="radio" name="teilnahm" value="maybe"><label>ich bin villicht debii, han aber chronisch müeh, mich z verpflichte. wahrschindli altlaschte us minere Chindheit…</label><br>
-                <input type="radio" name="teilnahm" value="nope"><label>ich chan leider nöd teilneh</label><br>-->
+                <input type="radio" name="teilnahme" value="Ja" checked><label><strong>ich bin fix debii!</strong></label><br>
+                <input type="radio" name="teilnahme" value="Vielleicht"><label>ich bin villicht debii, han aber chronisch müeh, mich z verpflichte. wahrschindli altlaschte us minere Chindheit…</label><br>
+                <input type="radio" name="teilnahme" value="Nein"><label>ich chan leider nöd teilneh</label><br>
                 <h3>vorname:</h3>
                 <input type="text" name="firstname" maxlength="50">
-                <!--<h3>nachname:</h3>
+                <h3>nachname:</h3>
                 <input type="text" name="lastname" maxlength="50">
-                <h3>nachricht:</h3>
-                <textarea rows="4" cols="50" placeholder="da bitte ganz e liebi / cooli / unterhaltsami / ghaltvollig / intelligenti mitteillig wo euses lebe beriicheret (mit maximal 1000 zeiche) maxlength="1000"></textarea>-->
+                <h3>mitteilig:</h3>
+                <textarea name="nachricht" rows="4" cols="50" placeholder="da bitte ganz e liebi / cooli / unterhaltsami / ghaltvollig / intelligenti mitteillig wo euses lebe beriicheret (mit maximal 1000 zeiche)" maxlength="1000"></textarea>
                 <input type="submit" value="abschicke">
             </form>
         </div>
@@ -231,50 +231,5 @@
            scrolly();
         }; 
      <script-->
-
-     <?php
-
-    // echo " "
-
-    if ( !empty( $_POST ) ) {
-
-        $servername = "80.74.151.100";
-        $database = "wg_fescht_ahmeldige";
-        $username = "wgfescht_user";
-        $password = "qP~m0d31";
-
-        // Create connection
-
-        $conn = mysqli_connect($servername, $username, $password, $database);
-
-        // Check connection
-
-        if (!$conn) {
-
-            die("Connection failed: " . mysqli_connect_error());
-
-        }
-        echo "Connected successfully";
-
-        $sql = "INSERT INTO teilnehmer (Vorname, Nachname, Nachricht, Teilnahme) VALUES ('{$mysqli->real_escape_string($_POST['firstname'])}', 'Vor und Nachname', 'Das ist eine etwas ausführlicher gehaltene Nachricht', 'ich nehme teil!')";
-        $insert = $mysqli->query($sql);
-
-        if ( $insert ) {
-            echo "Succesful! Row ID: {$mysqli->insert_id}";
-        } else {
-            die("Error: {$mysqli->errno} : {$mysqli->error}");
-        }
-        /*
-
-        if ( mysqli_query($conn, $sql)) {
-            echo "New Vinyl added succesfully";
-        } else {
-            echo "Error:" . $sql . "<br>" . mysqli.error($conn);
-        }
-        */
-
-        mysqli_close($conn);
-    }
-    ?>
     </body>
 </html>
