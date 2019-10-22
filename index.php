@@ -11,26 +11,12 @@
     <!--link  rel="stylesheet" href="assets/cssanimation.css"></link-->
 </head>
 <body>
-    <!--<div id="infos">
-        <p>WG Feschtli<br>22. November 2019<br>Schwimmbadweg 1<br>8400 Winterthur<br>ab 18:00 Uhr</p>
-        <img src="assets/img/svg/bxs-info-circle.svg">
-    <div>-->
-    <!--<div id="fescht-titel" class="corner-claim">
-        <h5>WG Feschtli</h5>
-    <div>
-    <div id="fescht-datum" class="corner-claim">
-        <h5>22. November 2019</h5>
-    </div>
-    <div id="fescht-ort" class="corner-claim">
-        <h5>Schwimmbadweg 1, 8400 Winterthur</h5>
-    </div>-->
     <div id="progress"></div>
     <div id="fixed-title-section">
         <h1>iihladig wg feschtli schwümmbadweg 1</h1>
         <button id="infos" href="#">alli infos</button>
         <p>WG Feschtli<br>22. November 2019<br>Schwimmbadweg 1<br>8400 Winterthur<br>ab 18:00 Uhr</p>
     </div>
-    <!--<div id="fixed-wrapper"></div>-->
     <div id="anmelden-wrapper">
         <button id="anmeldung" href="#">jetzt ahmelde…</button>
         <div id="normal-scroll">

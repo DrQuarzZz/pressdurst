@@ -32,10 +32,13 @@
         // echo "Connected successfully";
 
         $firstname = mysqli_real_escape_string($conn, $_POST['firstname']);
+        $firstnameEncoded = utf8_decode($firstname);
         $lastname = mysqli_real_escape_string($conn, $_POST['lastname']);
+        $lastnameEncoded = utf8_decode($lastname);
         $nachricht = htmlspecialchars($_POST['nachricht']);
+        $nachrichtEncoded = utf8_decode($nachricht);
         $teilnahme = mysqli_real_escape_string($conn, $_POST['teilnahme']);
-        $sql = "INSERT INTO teilnehmer (Vorname, Nachname, Nachricht, Teilnahme) VALUES ('$firstname', '$lastname', '$nachricht', '$teilnahme')";
+        $sql = "INSERT INTO teilnehmer (Vorname, Nachname, Nachricht, Teilnahme) VALUES ('$firstnameEncoded', '$lastnameEncoded', '$nachrichtEncoded', '$teilnahme')";
         //$insert = $mysqli->query($sql);
 
         // if ( $insert ) {
