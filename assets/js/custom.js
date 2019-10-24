@@ -6,18 +6,24 @@ $(document).ready(function() {
         scrollHorizontally: true
     });
     
-    setTimeout(function(){
-        $('.main-message').each(function(){
-            var getTitleHeight = $('#fixed-title-section').outerHeight(),
-                getMainMesssageHeight = $(this).outerHeight(),
-                getImageWrapHeight = getTitleHeight + getMainMesssageHeight;
-                // console.log(getImageWrapHeight);
-                $(this).closest('.fullscreen-img-wrap').find('.inner-bg-wrap').css({
-                    'height': 'calc(100vh - ' + getImageWrapHeight + 'px)',
-                    'margin-top': getTitleHeight + 'px'
-                });
-        });
-    }, 50)
+    function interfaceHeights() {
+        setTimeout(function(){
+            $('.main-message').each(function(){
+                var getTitleHeight = $('#fixed-title-section').outerHeight(),
+                    getMainMesssageHeight = $(this).outerHeight(),
+                    getImageWrapHeight = getTitleHeight + getMainMesssageHeight;
+                    // console.log(getImageWrapHeight);
+                    $(this).closest('.fullscreen-img-wrap').find('.inner-bg-wrap').css({
+                        'height': 'calc(100vh - ' + getImageWrapHeight + 'px)',
+                        'margin-top': getTitleHeight + 'px'
+                    });
+            });
+        }, 50)
+    }
+    interfaceHeights();
+    $(window).on('resize', function(){
+        interfaceHeights();
+    });
 }); // ready
 
 $(window).on('load', function(){

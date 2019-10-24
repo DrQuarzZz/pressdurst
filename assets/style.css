@@ -90,7 +90,7 @@ input, textarea {
 }
 .main-message {
     padding: 15px 25px;
-    max-width: 80%;
+    max-width: calc(100vw - 233px);
 }
 .main-message h2 {
     color: #fff;
@@ -246,4 +246,16 @@ body.php-feedback-page > div {
     font-weight: 700;
     margin-top: 25px;
     text-decoration: none;
+}
+@media screen and (max-width: 640px) {
+    .main-message {
+        padding: 15px 25px 65px 25px;
+        max-width: 100%;
+    }
+    #anmeldung {
+        width: 100%;
+    }
+    #fixed-title-section {
+        max-width: calc(100vw - 167px);
+    }
 }
