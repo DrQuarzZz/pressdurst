@@ -38,171 +38,317 @@
         </div>
     </div>
     <div id="fullpage">
-        <div id="slide-1" class="fullscreen-img-wrap section">
+        <div class="fullscreen-img-wrap section">
             <div id="lottie-elem" class="inner-bg-wrap">
             </div>
             <div class="main-message">
                 <h2>Bitte abescrolle (oder pfil-taschte benutze) &darr;</h2>
             </div>
         </div>
-        <div id="slide-2" class="fullscreen-img-wrap section">
+        <div class="fullscreen-img-wrap section">
             <div class="inner-bg-wrap">
-                <img src="assets/img/dummi-affe.jpeg">
+                <img src="assets/img/dummi-affe.jpg">
             </div>
             <div class="main-message">
-                <h2>Hey ihr dumme Affe!</h2>
+                <h2>Hallo ihr Affen!</h2>
             </div>
         </div>
-        <div id="slide-3" class="fullscreen-img-wrap section">
+        <div class="fullscreen-img-wrap section">
             <div class="inner-bg-wrap">
-                <img src="assets/img/chille.jpg">
+                <img src="assets/img/gammle.jpg">
             </div>
             <div class="main-message">
-                <h2>Ihr sind herzlich ihglade, zum bi eus am besagte Datum chli cho umechille</h2>
+                <h2>Wir laden euch am 22.11.2019 ab 20:00 Uhr dazu ein, an unserem WG-Fest herumzugammeln...</h2>
             </div>
         </div>
-        <div id="slide-4" class="fullscreen-img-wrap section">
+        <div class="fullscreen-img-wrap section">
             <div class="inner-bg-wrap">
-                <img src="assets/img/pb-party.gif">
+                <video loop controls>
+                    <source src="assets/video/tanzen.mp4" type="video/mp4">
+                    Dein Internet Browser unterstützt leider keine Videos.
+                </video>
             </div>
             <div class="main-message">
-                <h2>Tanze und fiire</h2>
+                <h2>…zu tanzen</h2>
             </div>
         </div>
-        <div id="slide-5" class="fullscreen-img-wrap section">
+        <div class="fullscreen-img-wrap section">
+            <div class="inner-bg-wrap">
+                <video loop controls>
+                    <source src="assets/video/feiern.mp4" type="video/mp4">
+                    Dein Internet Browser unterstützt leider keine Videos.
+                </video>
+            </div>
+            <div class="main-message">
+                <h2>…zu feiern</h2>
+            </div>
+        </div>
+        <div class="fullscreen-img-wrap section">
+            <div class="inner-bg-wrap">
+                <img src="assets/img/baueme-ausreissen.jpg">
+            </div>
+            <div class="main-message">
+                <h2>…und Bäume auszureissen.</h2>
+            </div>
+        </div>
+        <div class="fullscreen-img-wrap section">
             <div class="inner-bg-wrap">
                 <img src="assets/img/brueggli.jpg">
             </div>
             <div class="main-message">
-                <h2>De schwümmbadweg befindet sich grad nebetem Schwümmbad Geiselweid bim chline Brüggli</h2>
+                <h2>Der Schwimmbadweg 1 befindet sich in 8400 Winterthur gleich bei der kleinen Brücke hinter dem Schwimmbad Geiselweid.</h2>
             </div>
         </div>
-        <div id="slide-6" class="fullscreen-img-wrap section">
+        <div class="fullscreen-img-wrap section">
             <div class="inner-bg-wrap">
                 <img src="assets/img/ethnien-und-sexualitaet.jpg">
             </div>
             <div class="main-message">
-                <h2>Willkomme sind Lüüt vo allne Ethnie und sexuelle Orientierige und Usgrenzige werded nöd duldet</h2>
+                <h2>Willkommen sind Menschen jeglicher sexueller Orientierung und Ethnien…</h2>
             </div>
         </div>
-        <div id="slide-7" class="fullscreen-img-wrap section">
+        <div class="fullscreen-img-wrap section">
+            <div class="inner-bg-wrap">
+                <img src="assets/img/kleidung.jpg">
+            </div>
+            <div class="main-message">
+                <h2>..es wird jedoch begrüsst, wenn ihr in angemessener Kleidung erscheint.</h2>
+            </div>
+        </div>
+        <div class="fullscreen-img-wrap section">
             <div class="inner-bg-wrap">
                 <img src="assets/img/badewann-und-qualitaet.jpg">
             </div>
             <div class="main-message">
-                <h2>E Badwanne voll Qualität…</h2>
+                <h2>Das Schwimmbadweg-Team wird für eine Badewanne voll Qualitätsbier…</h2>
             </div>
         </div>
-        <div id="slide-8" class="fullscreen-img-wrap section">
+        <div class="fullscreen-img-wrap section">
             <div class="inner-bg-wrap">
-                <img src="assets/img/partyfeeling.jpeg">
+                <img src="assets/img/partyfeeling.jpg">
             </div>
             <div class="main-message">
-                <h2>…und Party Feeling isch organisiert</h2>
+                <h2>…und bombastische Partystimmung sorgen.</h2>
             </div>
         </div>
-        <div id="slide-9" class="fullscreen-img-wrap section">
+        <div class="fullscreen-img-wrap section">
             <div class="inner-bg-wrap">
-                <img src="assets/img/aff-stei.jpeg">
+                <img src="assets/img/maert.jpg">
             </div>
             <div class="main-message">
-                <h2>Und mir hoffed ihr müend nöd so en Stei riisse wie de</h2>
+                <h2>Dennoch sind Mitbringsel erwünscht wie zB. marktfrische Snacks…</h2>
             </div>
         </div>
-        <div id="slide-10" class="fullscreen-img-wrap section">
+        <div class="fullscreen-img-wrap section">
             <div class="inner-bg-wrap">
-                <img src="assets/img/maert.jpeg">
+                <video width="100%" height="auto" loading=”lazy” loop controls>
+                    <source src="assets/video/kaese.mp4" type="video/mp4">
+                    Dein Internet Browser unterstützt leider keine Videos.
+                </video>
             </div>
             <div class="main-message">
-                <h2>Mir sind aber natürli au froh, wenner auno öppis vom Märt chönd bringe</h2>
+                <h2>…Käse in verschiedenen Formen,</h2>
             </div>
         </div>
-        <div id="slide-11" class="fullscreen-img-wrap section">
+        <div class="fullscreen-img-wrap section">
+            <div class="inner-bg-wrap">
+                <img src="assets/img/beck.jpg">
+            </div>
+            <div class="main-message">
+                <h2>…etwas von der Bäckerei oder Getränke vom lokalen Spirituosenhändler.</h2>
+            </div>
+        </div>
+        <div class="fullscreen-img-wrap section">
             <div class="inner-bg-wrap">
                 <img src="assets/img/zuestupf.jpg">
             </div>
             <div class="main-message">
-                <h2>Oder en finanzielle Zuestupf dahlönd</h2>
+                <h2>Ebenso erfreuen sich die Bewohner des Schwimmbadwegs über grosse Geldgaben :)</h2>
             </div>
         </div>
-        <div id="slide-12" class="fullscreen-img-wrap section">
+        <div class="fullscreen-img-wrap section">
             <div class="inner-bg-wrap">
-                <img src="assets/img/drecksschueh.jpg">
+                <img src="assets/img/morgenstunden.jpg">
             </div>
             <div class="main-message">
-                <h2>Vorem Ihtrette tüender bitte eui Dreckslatsche uszieh</h2>
+                <h2>Um ca. 24 Uhr ziehen wir – unseren Nachbarn zuliebe – weiter in die Stadt und feiern den Sonntag, einfach weil es ihn gibt, bis in die Morgenstunden. </h2>
             </div>
         </div>
-        <div id="slide-13" class="fullscreen-img-wrap section">
+        <div class="fullscreen-img-wrap section">
             <div class="inner-bg-wrap">
-                <img src="assets/img/gschaeft-wc.jpg">
+                <img src="assets/img/liegen.jpg">
             </div>
             <div class="main-message">
-                <h2>Mir hetted gern, dass ihr eui Gschäft IS WC verrichted…</h2>
+                <h2>Da wir nicht in einer Villa sondern in einem Stefanini-Block leben, ist es uns nicht möglich gemütliche Schlafplätze in der Wohnung anzubieten.</h2>
             </div>
         </div>
-        <div id="slide-14" class="fullscreen-img-wrap section">
-            <div class="inner-bg-wrap">
-                <img src="assets/img/toilettenbenuetzung.jpeg">
-            </div>
-            <div class="main-message">
-                <h2>…und das au wieder suuber hinterlönd</h2>
-            </div>
-        </div>
-        <div id="slide-15" class="fullscreen-img-wrap section">
-            <div class="inner-bg-wrap">
-                <img src="assets/img/renne.jpg">
-            </div>
-            <div class="main-message">
-                <h2>Denked immer dra, es isch keis Renne</h2>
-            </div>
-        </div>
-        <div id="slide-16" class="fullscreen-img-wrap section">
-            <div class="inner-bg-wrap">
-                <img src="assets/img/fuer-alli.jpg">
-            </div>
-            <div class="main-message">
-                <h2>Es söll für alli öppis ha</h2>
-            </div>
-        </div>
-        <div id="slide-17" class="fullscreen-img-wrap section">
-            <div class="inner-bg-wrap">
-                <img src="assets/img/kater-doelf.jpg">
-            </div>
-            <div class="main-message">
-                <h2>Und es söll niemert so grimmig heigah</h2>
-            </div>
-        </div>
-        <div id="slide-18" class="fullscreen-img-wrap section">
-            <div class="inner-bg-wrap">
-                <img src="assets/img/schlafplaetz-und-verrichtigsboxe.jpg">
-            </div>
-            <div class="main-message">
-                <h2>Schlafplätz und Verrichtigsboxe chömmer leider keini büüte</h2>
-            </div>
-        </div>
-        <div id="slide-19" class="fullscreen-img-wrap section">
-            <div class="inner-bg-wrap">
-                <img src="assets/img/guesel.jpeg">
-            </div>
-            <div class="main-message">
-                <h2>Wenner s Huus wieder verlönd simmer froh wenner au eue Abfall debi hend</h2>
-            </div>
-        </div>
-        <div id="slide-20" class="fullscreen-img-wrap section">
-            <div class="inner-bg-wrap">
-                <img src="assets/img/gruuuusig.jpeg">
-            </div>
-            <div class="main-message">
-                <h2>Und eus nöd d Wohnig vollchörbled</h2>
-            </div>
-        </div>
-        <div id="slide-21" class="fullscreen-img-wrap section">
+        <div class="fullscreen-img-wrap section">
             <div class="inner-bg-wrap">
                 <img src="assets/img/liege.jpg">
             </div>
             <div class="main-message">
-                <h2>Und wenn de ganz Gspass verbii isch, dörfeder getroschte gah liege ;)</h2>
+                <h2>Vor der Wohnung auf der Strasse sollte jedoch ein Plätzchen für jeden und Jede vorhanden sein.</h2>
+            </div>
+        </div>
+        <div class="fullscreen-img-wrap section">
+            <div class="inner-bg-wrap">
+                <img src="assets/img/regeln.png">
+            </div>
+            <div class="main-message">
+                <h2>Da ein solches Fest Potential für Unruhen hat, bitten wir euch die nachfolgenden Regeln ernst zu nehmen und auch einzuhalten.</h2>
+            </div>
+        </div>
+        <div class="fullscreen-img-wrap section">
+            <div class="inner-bg-wrap">
+                <img src="assets/img/drecksschueh.jpg">
+            </div>
+            <div class="main-message">
+                <h2>Die Schuhe werden vor dem Eintreten ausgezogen und in den dafür vorgesehenen Bereich im Gang gestellt.</h2>
+            </div>
+        </div>
+        <div class="fullscreen-img-wrap section">
+            <div class="inner-bg-wrap">
+                <img src="assets/img/ausziehen.jpg">
+            </div>
+            <div class="main-message">
+                <h2>Eure Kleider dürft ihr gerne ausziehen und auf dem Bett im Zimmer links von der Eingangstüre deponieren. Denkt aber dran, beim Ausziehen gibts auch Grenzen ;) </h2>
+            </div>
+        </div>
+        <div class="fullscreen-img-wrap section">
+            <div class="inner-bg-wrap">
+                <img src="assets/img/wc.jpg">
+            </div>
+            <div class="main-message">
+                <h2>Obwohl wir nicht in einer Villa hausen, besitzen wir ein WC. Bitte macht Gebrauch davon…</h2>
+            </div>
+        </div>
+        <div class="fullscreen-img-wrap section">
+            <div class="inner-bg-wrap">
+                <img src="assets/img/pinkel-ala-liverpool.jpg">
+            </div>
+            <div class="main-message">
+                <h2>…und pinkelt nicht den Nachbarn in den Garten.</h2>
+            </div>
+        </div>
+        <div class="fullscreen-img-wrap section">
+            <div class="inner-bg-wrap">
+                <img src="assets/img/garten-1.jpg">
+            </div>
+            <div class="main-message">
+                <h2>Falls ihr unerwarteter Weise doch in Nachbars-Garten landet, seid doch so nett und lasst Schirme…</h2>
+            </div>
+        </div>
+        <div class="fullscreen-img-wrap section">
+            <div class="inner-bg-wrap">
+                <video width="100%" height="auto" loading=”lazy” loop controls>
+                    <source src="assets/video/garten-2.mp4" type="video/mp4">
+                    Dein Internet Browser unterstützt leider keine Videos.
+                </video>
+            </div>
+            <div class="main-message">
+                <h2>…sowie Blumen dort, wo sie sind.</h2>
+            </div>
+        </div>
+        <div class="fullscreen-img-wrap section">
+            <div class="inner-bg-wrap">
+                <img src="assets/img/garten-3.jpg">
+            </div>
+            <div class="main-message">
+                <h2>Die Blumen zu giessen, ist natürlich erlaubt!</h2>
+            </div>
+        </div>
+        <div class="fullscreen-img-wrap section">
+            <div class="inner-bg-wrap">
+                <img src="assets/img/widerlich.jpg">
+            </div>
+            <div class="main-message">
+                <h2>Bitte unterlasst solche widerlichen Dinge in unserer Wohnung…</h2>
+            </div>
+        </div>
+        <div class="fullscreen-img-wrap section">
+            <div class="inner-bg-wrap">
+                <img src="assets/img/kotze.jpg">
+            </div>
+            <div class="main-message">
+                <h2>…und haltet euren Alkoholkonsum unter Kontrolle. Niemand will so etwas sehen, oder?</h2>
+            </div>
+        </div>
+        <div class="fullscreen-img-wrap section">
+            <div class="inner-bg-wrap">
+                <video width="100%" height="auto" loading=”lazy” loop controls>
+                    <source src="assets/video/gewalt.mp4" type="video/mp4">
+                    Dein Internet Browser unterstützt leider keine Videos.
+                </video>
+            </div>
+            <div class="main-message">
+                <h2>Es ist untersagt in unserer Wohnung Gewalt auszuüben.</h2>
+            </div>
+        </div>
+        <div class="fullscreen-img-wrap section">
+            <div class="inner-bg-wrap">
+                <video width="100%" height="auto" loading=”lazy” loop controls>
+                    <source src="assets/video/blut.mp4" type="video/mp4">
+                    Dein Internet Browser unterstützt leider keine Videos.
+                </video>
+            </div>
+            <div class="main-message">
+                <h2>Falls ihr aus unerklärlichen Gründen trotzdem aus dem Mund bluten solltet, bitten wir euch, das Blut mit WC Papier fein säuberlich abzutupfen. Der Herr im Video zeigt euch wies geht!</h2>
+            </div>
+        </div>
+        <div class="fullscreen-img-wrap section">
+            <div class="inner-bg-wrap">
+                <img src="assets/img/zuengle.jpg">
+            </div>
+            <div class="main-message">
+                <h2>Es ist in Ordnung wenn ihr etwas herumzüngelt…</h2>
+            </div>
+        </div>
+        <div class="fullscreen-img-wrap section">
+            <div class="inner-bg-wrap">
+                <img src="assets/img/verrichtigsboxe.jpg">
+            </div>
+            <div class="main-message">
+                <h2>…aber wie beim Ausziehen gibt es auch hier Grenzen.</h2>
+            </div>
+        </div>
+        <div class="fullscreen-img-wrap section">
+            <div class="inner-bg-wrap">
+                <img src="assets/img/grundordnung.jpg">
+            </div>
+            <div class="main-message">
+                <h2>Wir bitten euch, eine gewisse Grundordnung einzuhalten…</h2>
+            </div>
+        </div>
+        <div class="fullscreen-img-wrap section">
+            <div class="inner-bg-wrap">
+                <img src="assets/img/guesel.jpg">
+            </div>
+            <div class="main-message">
+                <h2>…und die Abfalltrennung einzuhalten.</h2>
+            </div>
+        </div>
+        <div class="fullscreen-img-wrap section">
+            <div class="inner-bg-wrap">
+                <img src="assets/img/verkehrskadetten.jpg">
+            </div>
+            <div class="main-message">
+                <h2>Falls ihr eine der genannten Regeln nicht einhalten solltet, werden euch die Schwimmbadwegler aus dem Verkehr ziehen!</h2>
+            </div>
+        </div>
+        <div class="fullscreen-img-wrap section">
+            <div class="inner-bg-wrap">
+                <img src="assets/img/kater-doelf.jpg">
+            </div>
+            <div class="main-message">
+                <h2>Noch etwas Letztes: Seid glücklich, es ist nicht immer Freitag, der 22. November 2019</h2>
+            </div>
+        </div>
+        <div class="fullscreen-img-wrap section">
+            <div class="inner-bg-wrap">
+                <img src="assets/img/kuerbissaison.jpg">
+            </div>
+            <div class="main-message">
+                <h2>Um An-/Abmeldung wird bis am 15.11. gebeten. Bis dann!</h2>
             </div>
         </div>
     </div>

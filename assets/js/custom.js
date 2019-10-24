@@ -9,7 +9,7 @@ $(document).ready(function() {
     function interfaceHeights() {
         setTimeout(function(){
             $('.main-message').each(function(){
-                var getTitleHeight = $('#fixed-title-section').outerHeight(),
+                var getTitleHeight = 55,
                     getMainMesssageHeight = $(this).outerHeight(),
                     getImageWrapHeight = getTitleHeight + getMainMesssageHeight;
                     // console.log(getImageWrapHeight);
@@ -18,7 +18,7 @@ $(document).ready(function() {
                         'margin-top': getTitleHeight + 'px'
                     });
             });
-        }, 50)
+        }, 50);
     }
     interfaceHeights();
     $(window).on('resize', function(){
@@ -33,7 +33,8 @@ $(window).on('load', function(){
     // });
 
     // Intersection observer
-    var options = {
+    //! commented out 1
+    /**var options = {
         root: null,
         rootMargin: '0px',
         threshold: .5
@@ -52,13 +53,14 @@ $(window).on('load', function(){
                 $('#' + entry.target.id ).css('opacity', '0');
             }
         }
-    }
+    }**/
 
     /* By default, invokes the handler whenever:
     1. Any part of the target enters the viewport
     2. The last part of the target leaves the viewport */
 
-    let observer = new IntersectionObserver(handler, options);
+    //! commented out 2
+    /*let observer = new IntersectionObserver(handler, options);
     observer.observe(document.getElementById("slide-1"));
     observer.observe(document.getElementById("slide-2"));
     observer.observe(document.getElementById("slide-3"));
@@ -79,10 +81,10 @@ $(window).on('load', function(){
     observer.observe(document.getElementById("slide-18"));
     observer.observe(document.getElementById("slide-19"));
     observer.observe(document.getElementById("slide-20"));
-    observer.observe(document.getElementById("slide-21"));
+    observer.observe(document.getElementById("slide-21"));*/
 
     //progress bar
-    document.addEventListener("scroll", function() {
+    /*document.addEventListener("scroll", function() {
           var scrollTop =
             document.documentElement["scrollTop"] || document.body["scrollTop"];
           var scrollBottom =
@@ -94,7 +96,7 @@ $(window).on('load', function(){
             .style.setProperty("--scroll", scrollPercent);
         },
         { passive: true }
-      );
+      );*/
     
     // lottie web intro
     var elem = document.getElementById('lottie-elem');
