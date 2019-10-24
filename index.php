@@ -26,11 +26,13 @@
                 <input type="radio" name="teilnahme" value="Vielleicht"><label>ich bin villicht debii, han aber chronisch müeh, mich z verpflichte. wahrschindli altlaschte us minere Chindheit…</label><br>
                 <input type="radio" name="teilnahme" value="Nein"><label>ich chan leider nöd teilneh</label><br>
                 <h3>vorname:</h3>
-                <input type="text" name="firstname" maxlength="50">
+                <input type="text" name="firstname" maxlength="50" required>
                 <h3>nachname:</h3>
                 <input type="text" name="lastname" maxlength="50">
+                <h3>email:</h3>
+                <input type="email" name="email" required>
                 <h3>mitteilig:</h3>
-                <textarea name="nachricht" rows="4" cols="50" placeholder="da bitte ganz e liebi / cooli / unterhaltsami / ghaltvollig / intelligenti mitteillig wo euses lebe beriicheret (mit maximal 1000 zeiche)" maxlength="1000"></textarea>
+                <textarea name="nachricht" rows="4" cols="50" placeholder="da bitte ganz e liebi / cooli / unterhaltsami / ghaltvollig / intelligenti mitteillig wo euses lebe beriicheret (mit maximal 1000 zeiche)" maxlength="1000" required></textarea>
                 <input type="submit" value="abschicke">
             </form>
         </div>
