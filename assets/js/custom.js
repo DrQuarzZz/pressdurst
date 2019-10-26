@@ -15,24 +15,23 @@ $(document).ready(function() {
     function interfaceHeights() {
         setTimeout(function(){
             $('.main-message').each(function(){
-                var getTitleHeight = 155,
-                    getMainMesssageHeight = $(this).outerHeight(),
+                    //console.log( window.mobilecheck() );
+                    if ( window.mobilecheck() == true ) {
+                        var getTitleHeight = 55;
+                    } else {
+                        var getTitleHeight = 155;
+                    }
+
+                    var getMainMesssageHeight = $(this).outerHeight(),
                     getImageWrapHeight = getTitleHeight + getMainMesssageHeight,
                     calculatedViewportHeight = window.innerHeight;
-                    // console.log(getImageWrapHeight);
+                    
+                    console.log(calculatedViewportHeight - getImageWrapHeight);
 
-                    console.log( window.mobilecheck() );
-                    if ( window.mobilecheck() == true ) {
-                        $(this).closest('.fullscreen-img-wrap').find('.inner-bg-wrap').css({
-                            'height': calculatedViewportHeight - getImageWrapHeight + 'px',
-                            'margin-top': '55px'
-                        });
-                    } else {
-                        $(this).closest('.fullscreen-img-wrap').find('.inner-bg-wrap').css({
-                            'height': calculatedViewportHeight - getImageWrapHeight + 'px',
-                            'margin-top': getTitleHeight + 'px'
-                        });
-                    } 
+                    $(this).closest('.fullscreen-img-wrap').find('.inner-bg-wrap').css({
+                        'height': calculatedViewportHeight - getImageWrapHeight + 'px',
+                        'margin-top': getTitleHeight + 'px'
+                    });
             });
         }, 50);
     }
