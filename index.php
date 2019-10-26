@@ -9,6 +9,15 @@
     <link  rel="stylesheet" href="assets/style.css"><link>
     <link  rel="stylesheet" href="assets/fullpage.css"><link>
     <!--link  rel="stylesheet" href="assets/cssanimation.css"></link-->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130784549-3"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-130784549-3');
+    </script>
 </head>
 <body>
     <div id="progress"></div>

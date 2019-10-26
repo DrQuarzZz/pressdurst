@@ -7,6 +7,15 @@
     <meta name="robots" content="noindex">
     <title>Danke und hoffentli bis denn</title>
     <link  rel="stylesheet" href="assets/style.css"><link>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130784549-3"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-130784549-3');
+    </script>
 </head>
 <body class="php-feedback-page">
 <div>
