@@ -24,11 +24,13 @@
     <div id="fixed-title-section">
         <h1>iihladig wg feschtli schwümmbadweg 1</h1>
         <button id="infos" href="#">alli infos</button>
-        <p>WG Feschtli<br>22. November 2019<br>Schwimmbadweg 1<br>8400 Winterthur<br>ab 18:00 Uhr</p>
+        <p>WG Feschtli<br>22. November 2019<br>Schwimmbadweg 1<br>8400 Winterthur<br>ab 20:00 Uhr<br><span style="display:block;padding-top: 15px;font-size: 13px;font-weight: 100;padding-left: 20px;padding-right: 20px;line-height: 1.6em;">Bei Unklarheiten oder Disfunktionen dürfen Sie sich gerne über <a href="mailto:info@pressdurst.ch" style="font-weight:500; text-decoration: none;">info@pressdurst.ch</a> bei uns melden.</span></p>
     </div>
     <div id="anmelden-wrapper">
         <button id="anmeldung" href="#">jetzt ahmelde…</button>
         <div id="normal-scroll">
+        <h2>Ahmeldig</h2>
+        <span style="width: 100%; padding-top: 15px; font-size: 13px; font-weight: 100;">Bei Unklarheiten oder Disfunktionen dürfen Sie sich gerne über <a href="mailto:info@pressdurst.ch" style="font-weight:500; text-decoration: none;">info@pressdurst.ch</a> bei uns melden.</span>
           <form method="post" action="anmeldung.php">
                 <h3>bisch debi?</h3>
                 <input type="radio" name="teilnahme" value="Ja" checked><label><strong>ich bin fix debii!</strong></label><br>

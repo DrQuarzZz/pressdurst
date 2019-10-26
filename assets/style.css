@@ -1,6 +1,9 @@
 /* @import url('https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700&display=swap'); */
 @import url('https://fonts.googleapis.com/css?family=Roboto:100, 400, 700&display=swap');
 
+* {
+    box-sizing: border-box;
+}
 html {
     font-family: 'Roboto';
 }
@@ -176,7 +179,7 @@ video {
     font-weight: 700;
     z-index: 2;
 }
-#anmelden-wrapper > div {
+#anmelden-wrapper #normal-scroll {
     position: fixed;
     top: 0;
     left: 0;
@@ -185,19 +188,27 @@ video {
     min-height: 100vh;
     background: #000;
     z-index: 1;
+    padding: 50px 25px;
     overflow-y: scroll;
     display: none;
 }
-#anmelden-wrapper.anmeldung-open > div {
+#anmelden-wrapper.anmeldung-open > #normal-scroll {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 }
+#anmelden-wrapper form input:not( [type="radio"]) {
+    width: 100%;
+}
+#normal-scroll h2 {
+    width: 100%;
+}
 #anmelden-wrapper > div form {
     max-width: 550px;
     font-weight: 100;
-    margin: 50px 0;
+    padding: 50px 0 0 0;
+    width: 100%;
 }
 #anmelden-wrapper form input {
     margin-top: 25px;
@@ -268,10 +279,10 @@ body.php-feedback-page > div {
     #fixed-title-section {
         max-width: calc(100vw - 167px);
     }
-    #anmelden-wrapper > div form {
+    /* #anmelden-wrapper > div form {
         max-width: 90%;
         padding: 25px 5%;
-    }
+    } */
 }
 @media screen and (max-width: 400px) {
     h1 {
