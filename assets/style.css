@@ -269,6 +269,26 @@ body.php-feedback-page > div {
     text-decoration: none;
 }
 
+#dude-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+    z-index: 11;
+}
+body.idle #dude-wrapper {
+    display: flex;
+}
+
+#dude-wrapper img {
+    z-index: 1;
+}
+
 @media screen and (max-width: 640px) {
     .main-message {
         padding: 15px 25px 65px 25px;

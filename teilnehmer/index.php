@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="robots" content="noindex">
     <title>WG Feschtli Schwümmbadweg</title>
-    <!--link href="https://fonts.googleapis.com/css?family=Francois+One&display=swap" rel="stylesheet"-->
+    <link rel="shortcut icon" href="../assets/favicon.ico"/>
     <link  rel="stylesheet" href="../assets/style.css"><link>
     <link  rel="stylesheet" href="assets/fullpage.css"><link>
     <!--link  rel="stylesheet" href="assets/cssanimation.css"></link-->

@@ -156,4 +156,30 @@ $(window).on('load', function(){
             $(this).html('&#10007');
         }
     });
+
+    $.iMissYou({
+        title: "Chum zrugg!",
+        favicon: {
+            enabled: true,
+            src:'assets/favicon-unhappy.ico'
+        }
+    });
+
+    function getDudeGif() {
+        var xhr = $.get('https://api.giphy.com/v1/gifs/random?api_key=oqQ3Y5EvPTePdLjDXViKnbiUP9FQ7NT6&tag=lebowski&limit=1');
+        var timeout;
+        document.onmousemove = function(){
+        clearTimeout(timeout);
+        document.body.classList.remove('idle');
+        timeout = setTimeout(function(){
+            xhr.done(function(data) {
+                console.log(data.data.embed_url);
+                $('#dude-wrapper img').attr('src', data.data.image_original_url);
+                // $('#dude-wrapper').css('z-index', '11');
+            })
+            document.body.classList.add('idle');
+        }, 30000);
+        }
+    }
+    getDudeGif();
 }); //window

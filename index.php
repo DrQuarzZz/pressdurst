@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="robots" content="noindex">
     <title>WG Feschtli Schwümmbadweg</title>
+    <link rel="shortcut icon" href="assets/favicon.ico"/>
     <!--link href="https://fonts.googleapis.com/css?family=Francois+One&display=swap" rel="stylesheet"-->
     <link  rel="stylesheet" href="assets/style.css"><link>
     <link  rel="stylesheet" href="assets/fullpage.css"><link>
@@ -369,12 +370,16 @@
             </div>
         </div>
     </div>
+    <div id="dude-wrapper">
+        <img src="">
+    </div>
     <script
-  src="https://code.jquery.com/jquery-2.2.4.js"
-  integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
-  crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.9/lottie.js"></script>
-  <script src="assets/js/fullpage.js"></script>
+    src="https://code.jquery.com/jquery-2.2.4.js"
+    integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.9/lottie.js"></script>
+    <script src="assets/js/fullpage.js"></script>
+    <script src="assets/js/jquery.iMissYou.min.js"></script>
     <script src="assets/js/custom.js"></script>
     <!--script-- src="assets/js/scrolly.js"></!--script-->
     <!--script>

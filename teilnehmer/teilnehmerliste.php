@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="robots" content="noindex">
     <title>Teilnehmerliste</title>
+    <link rel="shortcut icon" href="../assets/favicon.ico"/>
     <!--<link  rel="stylesheet" href="../assets/style.css"><link>-->
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130784549-3"></script>
