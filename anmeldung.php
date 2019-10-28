@@ -65,19 +65,64 @@
         
 
         // Set the email subject.
-        $subject = "";
-        if ( $teilnahme == "Ja" ) {
-            $subject .= "Mir freued eus uf dich!";
-        } elseif ( $teilnahme == "Vielleicht" ) {
-            $subject .= "Du wirsches nöd bereue!";
-        } elseif ( $teilnahme == "Nein" ) {
-            $subject .= "Das isch würklich üsserscht Schaad!";
-        } else {
-            $subject .= "Was isch denn jetzt los?!";
+            // $subject = "";
+            // if ( $teilnahme == "Ja" ) {
+            //     $subject .= "Mir freued eus uf dich!";
+
+            // } elseif ( $teilnahme == "Vielleicht" ) {
+            //     $subject .= "Du wirsches nöd bereue!";
+            // } elseif ( $teilnahme == "Nein" ) {
+            //     $subject .= "Das isch würklich üsserscht Schaad!";
+            // } else {
+            //     $subject .= "Was isch denn jetzt los?!";
+            // }
+
+        switch ($teilnahme) {
+            case "Ja":
+                $subject = "Cool dass du dabei bist, " . $firstnameEncoded . "! – WG Feschtli Schwimmbadweg 1";
+                $email_content = "Liebe Festbesucherin, lieber Festbesucher\n\n
+                Es freut uns sehr, dass du dich angemeldet hast\n
+                und wir dich begrüssen dürfen als unseren Gast.\n
+                Wir erwarten dich voller Freude\n
+                In unserem kleinen Wohnungsgebäude.\n
+                Hoffentlich fühlst du wie wir\n
+                Und freust dich ebenfalls wie ein Tier.\n
+                Bis bald du gute Seele\n
+                Bald schütten wir zusammen etwas in die Kehle!\n\n
+                Din Schwümmbiweg Nr. 1";
+                break;
+            case "Vielleicht":
+                $subject = "Überlege es dir gut, " . $firstnameEncoded . "! – WG Feschtli Schwimmbadweg 1";
+                $email_content = "Liebe Festbesucherin, lieber Festbesucher\n\n
+                Wir bedauern sehr, dass du dich abgemeldet hast\n
+                und wir dich nicht begrüssen dürfen als unseren Gast.\n
+                Wir registrierten die Absage mit Bedauern\n
+                und sind nun kräftig am trauern.\n
+                Du wirst der Partygesellschaft fehlen,\n
+                und hinterlässt Löcher in unseren Seelen\n
+                Wir hoffen es bietet sich demnächst eine Gelegenheit\n
+                auf etwas gemeinsame Zeit\n\n
+                Din Schwümmbiweg Nr. 1";
+                break;
+            case "Nein":
+                $subject = "Das ist äusserst schade, " . $firstnameEncoded . "! – WG Feschtli Schwimmbadweg 1";
+                $email_content = "Liebe Festbesucherin, lieber Festbesucher\n\n
+                Wir haben deine Antwort registriert\n
+                und sind etwas frustriert.\n
+                Um potentielle Fehlplanungen zu vermeiden\n
+                Bitten wir, dich demnächst zu entscheiden\n
+                Für nachfragen sind wir stets für dich da\n
+                Fragen und die Anmeldung kannst du senden an info@pressdurst.ch\n
+                In unserem kleinen Gebäude\n
+                hätten wir an dir sehr freude.\n
+                Hoffentlich fühlst du wie wir\n
+                Und trinkst mit uns am 22. ein Bier\n\n
+                Din Schwümmbiweg Nr. 1";
+                break;
         }
 
         // Build the email content.
-        $email_content = "Hoi \nMega cool dassd chunnsch, mir freued eus uf dich! Din Schwümmbiweg 1!";
+        // $email_content = "Hoi \nMega cool dassd chunnsch, mir freued eus uf dich! Din Schwümmbiweg 1!";
         // $email_content .= "Mega cool dassd chunnsch, mir freued eus uf dich! Din Schwümmbiweg 1!";
         // $email_content .= "Telefon:\n$phone\n\n";
         // $email_content .= "Nachricht:\n$message\n";
