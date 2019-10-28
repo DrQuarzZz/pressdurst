@@ -53,7 +53,7 @@
             <div id="lottie-elem" class="inner-bg-wrap">
             </div>
             <div class="main-message">
-                <h2>Bitte runter scrollen (oder Pfeil-Testen benutzen) &darr;</h2>
+                <h2>Bitte runter scrollen (oder Pfeil-Tasten benutzen) &darr;</h2>
             </div>
         </div>
         <div class="fullscreen-img-wrap section">

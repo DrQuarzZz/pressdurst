@@ -80,44 +80,15 @@
         switch ($teilnahme) {
             case "Ja":
                 $subject = "Cool dass du dabei bist, " . $firstnameEncoded . "! – WG Feschtli Schwimmbadweg 1";
-                $email_content = "Liebe Festbesucherin, lieber Festbesucher\n\n
-                Es freut uns sehr, dass du dich angemeldet hast\n
-                und wir dich begrüssen dürfen als unseren Gast.\n
-                Wir erwarten dich voller Freude\n
-                In unserem kleinen Wohnungsgebäude.\n
-                Hoffentlich fühlst du wie wir\n
-                Und freust dich ebenfalls wie ein Tier.\n
-                Bis bald du gute Seele\n
-                Bald schütten wir zusammen etwas in die Kehle!\n\n
-                Din Schwümmbiweg Nr. 1";
+                $email_content = "Liebe Festbesucherin, lieber Festbesucher\n\nEs freut uns sehr, dass du dich angemeldet hast\nund wir dich begrüssen dürfen als unseren Gast.\nWir erwarten dich voller Freude\nIn unserem kleinen Wohnungsgebäude.\nHoffentlich fühlst du wie wir\nUnd freust dich ebenfalls wie ein Tier.\nBis bald du gute Seele\nBald schütten wir zusammen etwas in die Kehle!\n\nDin Schwümmbiweg Nr. 1";
                 break;
             case "Vielleicht":
                 $subject = "Überlege es dir gut, " . $firstnameEncoded . "! – WG Feschtli Schwimmbadweg 1";
-                $email_content = "Liebe Festbesucherin, lieber Festbesucher\n\n
-                Wir bedauern sehr, dass du dich abgemeldet hast\n
-                und wir dich nicht begrüssen dürfen als unseren Gast.\n
-                Wir registrierten die Absage mit Bedauern\n
-                und sind nun kräftig am trauern.\n
-                Du wirst der Partygesellschaft fehlen,\n
-                und hinterlässt Löcher in unseren Seelen\n
-                Wir hoffen es bietet sich demnächst eine Gelegenheit\n
-                auf etwas gemeinsame Zeit\n\n
-                Din Schwümmbiweg Nr. 1";
+                $email_content = "Liebe Festbesucherin, lieber Festbesucher\n\nWir bedauern sehr, dass du dich abgemeldet hast\nund wir dich nicht begrüssen dürfen als unseren Gast.\nWir registrierten die Absage mit Bedauern\nund sind nun kräftig am trauern.\nDu wirst der Partygesellschaft fehlen,\nund hinterlässt Löcher in unseren Seelen\nWir hoffen es bietet sich demnächst eine Gelegenheit\nauf etwas gemeinsame Zeit\n\nDin Schwümmbiweg Nr. 1";
                 break;
             case "Nein":
                 $subject = "Das ist äusserst schade, " . $firstnameEncoded . "! – WG Feschtli Schwimmbadweg 1";
-                $email_content = "Liebe Festbesucherin, lieber Festbesucher\n\n
-                Wir haben deine Antwort registriert\n
-                und sind etwas frustriert.\n
-                Um potentielle Fehlplanungen zu vermeiden\n
-                Bitten wir, dich demnächst zu entscheiden\n
-                Für nachfragen sind wir stets für dich da\n
-                Fragen und die Anmeldung kannst du senden an info@pressdurst.ch\n
-                In unserem kleinen Gebäude\n
-                hätten wir an dir sehr freude.\n
-                Hoffentlich fühlst du wie wir\n
-                Und trinkst mit uns am 22. ein Bier\n\n
-                Din Schwümmbiweg Nr. 1";
+                $email_content = "Liebe Festbesucherin, lieber Festbesucher\n\nWir haben deine Antwort registriert\nund sind etwas frustriert.\nUm potentielle Fehlplanungen zu vermeiden\nBitten wir, dich demnächst zu entscheiden\nFür nachfragen sind wir stets für dich da\nFragen und die Anmeldung kannst du senden an info@pressdurst.ch\nIn unserem kleinen Gebäude\nhätten wir an dir sehr freude.\nHoffentlich fühlst du wie wir\nUnd trinkst mit uns am 22. ein Bier\n\nDin Schwümmbiweg Nr. 1";
                 break;
         }
 
