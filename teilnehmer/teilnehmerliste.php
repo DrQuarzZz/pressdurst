@@ -78,8 +78,19 @@
         // }
 
         $password = mysqli_real_escape_string($conn, $_POST['password']);
+        
+        $dbpassword = "SELECT Passwort FROM adminpw";
+        $getPassword = $conn->query($dbpassword);
+            if ( $getPassword=mysqli_query($conn,$dbpassword) ) {
+                // Fetch one and one row
+                while ($row=mysqli_fetch_row($getPassword))
+                    {
+                        $adminPassword = $row[0];
+                    }
+            }
 
-        if ( $password == "8400" ) {
+        if ( $password == $adminPassword ) {
+            
             // $sql = "SELECT id, Vorname, Nachname, Nachricht, Teilnahme, Email FROM teilnehmer";
             $sql = "SELECT * FROM teilnehmer";
             $result = $conn->query($sql);
