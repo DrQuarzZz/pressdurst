@@ -46,7 +46,7 @@
         $lastname = mysqli_real_escape_string($conn, $_POST['lastname']);
         $lastnameEncoded = utf8_decode($lastname);
         $nachricht = htmlspecialchars($_POST['nachricht']);
-        $nachrichtEncoded = utf8_decode($nachricht);
+        $nachrichtEncoded = str_replace("'", "\'", utf8_decode($nachricht));
         $teilnahme = mysqli_real_escape_string($conn, $_POST['teilnahme']);
         $email = mysqli_real_escape_string($conn, $_POST['email']);
         $emailEncoded = utf8_decode($email);

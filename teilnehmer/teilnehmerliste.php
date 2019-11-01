@@ -46,11 +46,26 @@
             background-color: #4CAF50;
             color: white;
         }
+        body > h1 {
+            padding-top: 100px;
+        }
+        #teilnehmer-table > div {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            padding: 25px;
+            background-color: #fff;
+            border-bottom: 1px solid #000;
+            font-family: sans-serif;
+        }
     </style>
 </head>
 <body class="php-teilnehmer-page">
     <h1>Teilnehmerliste</h1>
-    <div>
+    <div id="teilnehmer-table">
 <?php
     if ( !empty( $_POST ) ) {
 
@@ -91,21 +106,35 @@
             }
 
         if ( $password == $adminPassword ) {
-            
             // $sql = "SELECT id, Vorname, Nachname, Nachricht, Teilnahme, Email FROM teilnehmer";
             $sql = "SELECT * FROM teilnehmer";
             $result = $conn->query($sql);
 
+            $yesCounter = 0;
+            $maybeCounter = 0;
+            $noCounter = 0;
+
+            // 
             if ($result->num_rows > 0) {
                 echo "<table><tr><th>ID</th><th>Nimmt teil?</th><th>Name:</th><th>Nachricht</th><th>Email</th></tr>";
                 // output data of each row
                 while($row = $result->fetch_assoc()) {
                     echo "<tr><td>" . utf8_encode($row["ID"]) . "</td><td>" . utf8_encode($row["Teilnahme"]) . "</td><td>" . utf8_encode($row["Vorname"]) . " " . utf8_encode($row["Nachname"]) . "</td><td>" . utf8_encode($row["Nachricht"]) . "</td><td>" . utf8_encode($row["Email"]) . "</td></tr>";
+                    if ( $row["Teilnahme"] == "Ja") {
+                        ++$yesCounter;
+                    }
+                    if ( $row["Teilnahme"] == "Vielleicht") {
+                        ++$maybeCounter;
+                    }
+                    if ( $row["Teilnahme"] == "Nein") {
+                        ++$noCounter;
+                    }
                 }
                 echo "</table>";
             } else {
                 echo "0 results";
             }
+            print "<div><span>Ja: $yesCounter </span><span>Vielleicht: $maybeCounter </span><span>Nein: $noCounter </span></div>";
         } else {
             echo "please enter the right password in order to see the participants\n";
             ?>
