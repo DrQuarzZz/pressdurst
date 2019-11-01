@@ -85,11 +85,11 @@
                 break;
             case "Vielleicht":
                 $subject = "Überlege es dir gut, " . $firstnameEncoded . "! – WG Feschtli Schwimmbadweg 1";
-                $email_content = "Liebe Festbesucherin, lieber Festbesucher\n\nWir bedauern sehr, dass du dich abgemeldet hast\nund wir dich nicht begrüssen dürfen als unseren Gast.\nWir registrierten die Absage mit Bedauern\nund sind nun kräftig am trauern.\nDu wirst der Partygesellschaft fehlen,\nund hinterlässt Löcher in unseren Seelen\nWir hoffen es bietet sich demnächst eine Gelegenheit\nauf etwas gemeinsame Zeit\n\nDin Schwümmbiweg Nr. 1";
+                $email_content = "Liebe Festbesucherin, lieber Festbesucher\n\nWir haben deine Antwort registriert\nund sind etwas frustriert.\nUm potentielle Fehlplanungen zu vermeiden\nBitten wir, dich demnächst zu entscheiden\nFür nachfragen sind wir stets für dich da\nFragen und die Anmeldung kannst du senden an info@pressdurst.ch\nIn unserem kleinen Gebäude\nhätten wir an dir sehr freude.\nHoffentlich fühlst du wie wir\nUnd trinkst mit uns am 22. ein Bier\n\nDin Schwümmbiweg Nr. 1";
                 break;
             case "Nein":
                 $subject = "Das ist äusserst schade, " . $firstnameEncoded . "! – WG Feschtli Schwimmbadweg 1";
-                $email_content = "Liebe Festbesucherin, lieber Festbesucher\n\nWir haben deine Antwort registriert\nund sind etwas frustriert.\nUm potentielle Fehlplanungen zu vermeiden\nBitten wir, dich demnächst zu entscheiden\nFür nachfragen sind wir stets für dich da\nFragen und die Anmeldung kannst du senden an info@pressdurst.ch\nIn unserem kleinen Gebäude\nhätten wir an dir sehr freude.\nHoffentlich fühlst du wie wir\nUnd trinkst mit uns am 22. ein Bier\n\nDin Schwümmbiweg Nr. 1";
+                $email_content = "Liebe Festbesucherin, lieber Festbesucher\n\nWir bedauern sehr, dass du dich abgemeldet hast\nund wir dich nicht begrüssen dürfen als unseren Gast.\nWir registrierten die Absage mit Bedauern\nund sind nun kräftig am trauern.\nDu wirst der Partygesellschaft fehlen,\nund hinterlässt Löcher in unseren Seelen\nWir hoffen es bietet sich demnächst eine Gelegenheit\nauf etwas gemeinsame Zeit\n\nDin Schwümmbiweg Nr. 1";
                 break;
         }
 
