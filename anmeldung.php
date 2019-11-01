@@ -56,7 +56,7 @@
         if ( mysqli_query($conn, $sql)) {
             echo "du hesch eus din entscheid soebe erfolgriich kommuniziert. Danke für das!";
         } else {
-            echo "Error:" . $sql . "<br>" . mysqli.error($conn);
+            echo "Error:" . $sql . "<br>" . mysqli_error($conn);
         }
 
         // automatic confirmation email
