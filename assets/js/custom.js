@@ -179,9 +179,9 @@ $(window).on('load', function(){
             })
             setTimeout(function(){
                 document.body.classList.add('idle');
-            }, 5000);
+            }, 30000);
         }, 25000);
         }
     }
-    getDudeGif();
+    // getDudeGif();
 }); //window
