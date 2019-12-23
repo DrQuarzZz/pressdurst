@@ -130,6 +130,7 @@
                     if ( $row["Teilnahme"] == "Nein") {
                         ++$noCounter;
                     }
+                    var_dump($row["Email"]);
                 }
                 echo "</table>";
             } else {
