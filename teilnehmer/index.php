@@ -22,7 +22,7 @@
 <body style="min-height: 99vh;display: flex;justify-content: center;align-items: center;">
     <form method="post" action="teilnehmerliste.php" style="text-align: center;">
         <h3>Bitte Passwort eingeben</h3>
-        <input id="password" name="password" class="input_text" type="password"/>
+        <input id="password" name="password" class="input_text" type="password" autofocus/>
         <input type="submit" value="abschicke">
     </form>
 </body>
