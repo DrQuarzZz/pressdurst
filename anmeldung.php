@@ -23,11 +23,6 @@
 <?php
     if ( !empty( $_POST ) ) {
 
-        // $servername = "80.74.151.100";
-        // $database = "wg_fescht_ahmeldige";
-        // $username = "wgfescht_user";
-        // $password = "qP~m0d31";
-
         require_once('assets/requirements/config.php');
 
         // Create connection
